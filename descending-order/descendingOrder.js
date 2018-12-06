@@ -1,3 +1,12 @@
 module.exports = function descendingOrder(number) {
-  // write code in here
+  if(typeof number === 'number') {
+  let arr = (''+number).split('');
+  arr.sort();
+  arr.reverse();
+  let str = arr.join('');
+  let answer = parseInt(str, 10);
+  return answer;
+  } else {
+    return 'not a number!';
+  }
 }

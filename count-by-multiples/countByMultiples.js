@@ -1,3 +1,8 @@
 module.exports = function countByMultiples(length, x) {
-  // write your code in here
+  let array = []
+  for(i=0; i<length ; i++) {
+    let currentValue = x*(i+1);
+    array.push(currentValue);
+  }
+  return array;
 }
