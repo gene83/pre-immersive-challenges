@@ -1,3 +1,8 @@
 module.exports = function needleInHaystack(haystack) {
-  // write code in here
+  for (let i = 0; i < haystack.length; i++) {
+    if (haystack[i] === 'needle') {
+      return i;
+    }
+  }
+  return false;
 }
